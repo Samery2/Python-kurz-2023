@@ -25,3 +25,4 @@ prijmeni2 = prijmeni[1:3].upper()
 prijmeni3=prijmeni[3:].lower()
 
 print(jmeno1+jmeno2+" "+prijmeni1+prijmeni2+prijmeni3)
+print(jmeno1+jmeno2+" "+prijmeni1+prijmeni2+prijmeni3)
