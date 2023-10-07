@@ -44,7 +44,7 @@ for student, body in body_studentu.items():
     elif 49 >= body >= 30:
         znamky_studentu[student] = {"Body": body, "Výsledná známka": 4}
     else:
-         znamky_studentu[student] = {"Body": body, "Výsledná známka": 5}
+        znamky_studentu[student] = {"Body": body, "Výsledná známka": 5}
 
 
 with open("znamky.json", mode="w", encoding="utf-8") as znamky:
