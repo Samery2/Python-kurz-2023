@@ -11,21 +11,12 @@ zadany_kod = input("Vypište kód zboží: ").upper()
 if zadany_kod in sklad:
         pocet_kusu = int(input("Udejte počet požadovaných kusů: "))
         if pocet_kusu <= sklad[zadany_kod]:
-            probehne_koupe1 = input("Souhlasí zákazník s koupí? (A/N): ").upper()
-            if probehne_koupe1 == "A":
-                sklad[zadany_kod] = sklad[zadany_kod] - pocet_kusu
-                print(f"Na prodejně zbývá {sklad[zadany_kod]} kusů")
-            else:
-                print("Koupě neproběhla, děkujeme za návštěvu.")
+            sklad[zadany_kod] = sklad[zadany_kod] - pocet_kusu
+            print(f"Na prodejně zbývá {sklad[zadany_kod]} kusů")
         else:
             print(f"Na skladě je k dispozici pouze {sklad[zadany_kod]} kusů.")
-            probehne_koupe2 = input("Souhlasí zákazník s koupí? (A/N): ").upper()
-            if probehne_koupe2 == "A":
-                pocet_pozadovanych_kusu2 = int(input("Uveďte počet reálně kupovaných kusů: "))
-                sklad[zadany_kod] = sklad[zadany_kod] - pocet_pozadovanych_kusu2
-                print(f"Na prodejně zbývá {sklad[zadany_kod]} kusů")
-            else:
-                print("Koupě neproběhla, děkujeme za návštěvu.")
+            sklad[zadany_kod] -= sklad[zadany_kod]
+            print(f"Na prodejně zbývá {sklad[zadany_kod]} kusů")
 else:
    print("Zboží není v současné chvíli na skladě.")
 
