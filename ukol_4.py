@@ -54,3 +54,25 @@ phone_number2 = input("Prosím uveďte telefoní číslo, na které si přejete 
 control2()
 
 #Bonus 2
+def control3(phone_number3: str) -> None:
+    phone=phone_number3.replace(" ", "")
+
+    if len(phone) == 9:
+        if phone.isdigit():
+            print(True)
+        else:
+            print(False)
+            exit()
+    elif len(phone) == 13:
+        if phone[0] == "+" and phone[1:].isdigit(): 
+            print(True)
+        else:
+            print(False)
+            exit()
+    else:
+        print(False)
+        exit()
+
+phone_number3 = input("Prosím uveďte telefoní číslo, na které si přejete odeslat Vaši zprávu: ")
+
+control3(phone_number3)
