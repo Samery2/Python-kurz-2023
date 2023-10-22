@@ -76,3 +76,5 @@ def control3(phone_number3: str) -> None:
 phone_number3 = input("Prosím uveďte telefonní číslo, na které si přejete odeslat Vaši zprávu: ")
 
 control3(phone_number3)
+print(type(control3))
+print(type(phone_number3))
