@@ -22,7 +22,7 @@ def price():
     print(f"Cena zprávy, kterou se chystáte odeslat je {total_price} Kč.")
 
 
-phone_number = input("Prosím uveďte telefoní číslo, na které si přejete odeslat Vaši zprávu: ")
+phone_number = input("Prosím uveďte telefonní číslo, na které si přejete odeslat Vaši zprávu: ")
 control()
 
 SMS_text = input("Prosím sem vypište text zprávy: ")
@@ -49,7 +49,7 @@ def control2():
         exit()
 
 
-phone_number2 = input("Prosím uveďte telefoní číslo, na které si přejete odeslat Vaši zprávu: ")
+phone_number2 = input("Prosím uveďte telefonní číslo, na které si přejete odeslat Vaši zprávu: ")
 
 control2()
 
@@ -73,6 +73,6 @@ def control3(phone_number3: str) -> None:
         print(False)
         exit()
 
-phone_number3 = input("Prosím uveďte telefoní číslo, na které si přejete odeslat Vaši zprávu: ")
+phone_number3 = input("Prosím uveďte telefonní číslo, na které si přejete odeslat Vaši zprávu: ")
 
 control3(phone_number3)
